@@ -1,0 +1,121 @@
+/*
+Theme Name: BrooksCode
+Theme URI: https://brookscode.com/themes/brookscode
+Author: Steven Brooks
+Author URI: https://brookscode.com
+Description: This is the theme for brookscode.com.Please don't steal it.
+Requires at least: 6.4
+Tested up to: 6.4
+Requires PHP: 7.0
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: brookscode
+Tags: blog, portfolio, entertainment, one-column, custom-logo, custom-background, custom-colors
+*/
+
+
+$primary: #061A40;
+$primaryLight: #061a40f0;
+$secondary: #0353A4;
+$secondaryLight: #0353a470;
+$tertiary: #B9D6F2;
+$fontPrimary: #f9f9f9;
+$fontSecondary: #061A40;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: $fontPrimary;
+}
+
+.site-header {
+    background-color: $primary;
+    height: 100px;
+    width: 100%;
+    max-width: 100%;
+    position: sticky;
+
+    .top-bar {
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 100%;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            border: 2px solid $tertiary;
+            border-radius: 4px;
+        }
+
+        .contact-button {
+            background-color: $tertiary;
+            color: $fontSecondary;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+
+    .menu-area {
+
+        .container {
+            
+        }
+
+        .menu-items ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+        
+        .menu-items a {
+            text-decoration: none;
+        }
+
+        .burger-menu {
+            @media(max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.main-content {
+    background-color: $primaryLight;
+    height: 100%;
+
+    .container {
+
+        .page-header {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .blog-card {
+            margin: 1rem;
+            padding: 1rem;
+            background-color: $primary;
+            border-radius: 5px;
+            min-height: 250px;
+
+           img {
+            float: left;
+            margin-right: 1rem;
+           }
+        }
+    }
+
+}
+
+.site-footer {
+    background-color: $primary;
+}

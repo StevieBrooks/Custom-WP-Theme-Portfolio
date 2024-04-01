@@ -1,0 +1,92 @@
+/*
+Theme Name: BrooksCode
+Theme URI: https://brookscode.com/themes/brookscode
+Author: Steven Brooks
+Author URI: https://brookscode.com
+Description: This is the theme for brookscode.com.Please don't steal it.
+Requires at least: 6.4
+Tested up to: 6.4
+Requires PHP: 7.0
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: brookscode
+Tags: blog, portfolio, entertainment, one-column, custom-logo, custom-background, custom-colors
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #f9f9f9;
+}
+
+.site-header {
+  background-color: #061A40;
+  height: 100px;
+  width: 100%;
+  max-width: 100%;
+  position: sticky;
+}
+.site-header .top-bar {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.site-header .top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 2rem;
+}
+.site-header .top-bar .logo {
+  border: 2px solid #B9D6F2;
+  border-radius: 4px;
+}
+.site-header .top-bar .contact-button {
+  background-color: #B9D6F2;
+  color: #061A40;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+.site-header .menu-area .menu-items ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.site-header .menu-area .menu-items a {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .site-header .menu-area .burger-menu {
+    display: none;
+  }
+}
+
+.main-content {
+  background-color: rgba(6, 26, 64, 0.9411764706);
+  height: 100%;
+}
+.main-content .container .page-header {
+  text-align: center;
+  font-size: 2rem;
+}
+.main-content .container .blog-card {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #061A40;
+  border-radius: 5px;
+  min-height: 250px;
+}
+.main-content .container .blog-card img {
+  float: left;
+  margin-right: 1rem;
+}
+
+.site-footer {
+  background-color: #061A40;
+}
+
+/*# sourceMappingURL=style.css.map */

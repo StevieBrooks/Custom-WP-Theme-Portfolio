@@ -1,0 +1,16 @@
+[30-Mar-2024 18:38:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-content/themes/brookscode/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-content/themes/brookscode/index.php on line 1
+[30-Mar-2024 18:44:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-content/themes/brookscode/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-content/themes/brookscode/index.php on line 1
+[01-Apr-2024 17:10:21 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[01-Apr-2024 17:24:48 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[01-Apr-2024 17:26:11 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[01-Apr-2024 18:13:50 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[01-Apr-2024 18:14:04 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[01-Apr-2024 18:15:26 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[01-Apr-2024 18:15:49 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[01-Apr-2024 18:19:09 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-includes/class-wp-customize-widgets.php on line 905
