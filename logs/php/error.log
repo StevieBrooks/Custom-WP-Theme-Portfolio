@@ -14,3 +14,6 @@ Stack trace:
 [01-Apr-2024 18:15:26 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-includes/class-wp-customize-widgets.php on line 905
 [01-Apr-2024 18:15:49 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-includes/class-wp-customize-widgets.php on line 905
 [01-Apr-2024 18:19:09 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[02-Apr-2024 12:39:22 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[08-Apr-2024 08:56:17 UTC] PHP Parse error:  syntax error, unexpected token ":" in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-content/themes/brookscode/index.php on line 26
+[08-Apr-2024 08:56:25 UTC] PHP Parse error:  syntax error, unexpected token ":" in /Users/stevenbrooks/Local Sites/brookscode/app/public/wp-content/themes/brookscode/index.php on line 26

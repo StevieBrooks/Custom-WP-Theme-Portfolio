@@ -15,27 +15,36 @@ Tags: blog, portfolio, entertainment, one-column, custom-logo, custom-background
 */
 
 
-$primary: #061A40;
-$primaryLight: #061a40f0;
-$secondary: #0353A4;
-$secondaryLight: #0353a470;
-$tertiary: #B9D6F2;
-$fontPrimary: #f9f9f9;
-$fontSecondary: #061A40;
+$primary: #040404;
+$secondary: #17202B;
+$secondaryHover: #17202bb0;
+$details: #6290C8;
+$fontPrimary: #F5F5F5;
+$fontSecondary: #040404;
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+}
+
+li, a {
     color: $fontPrimary;
 }
 
+li:hover, a:hover {
+    color: $details;
+    transform: translate(0, -2px);
+}
+
 .site-header {
-    background-color: $primary;
     height: 100px;
     width: 100%;
     max-width: 100%;
     position: sticky;
+    background-color: $primary;
+    color: $fontPrimary;
 
     .top-bar {
         height: 70px;
@@ -52,12 +61,12 @@ $fontSecondary: #061A40;
         }
 
         .logo {
-            border: 2px solid $tertiary;
+            border: 2px solid $details;
             border-radius: 4px;
         }
 
         .contact-button {
-            background-color: $tertiary;
+            background-color: $details;
             color: $fontSecondary;
             padding: 1rem;
             border: none;
@@ -68,7 +77,7 @@ $fontSecondary: #061A40;
     .menu-area {
 
         .container {
-            
+            background-color: $primary;
         }
 
         .menu-items ul {
@@ -90,27 +99,62 @@ $fontSecondary: #061A40;
 }
 
 .main-content {
-    background-color: $primaryLight;
     height: 100%;
+    background-color: $primary;
+    color: $fontPrimary;
 
     .container {
 
         .page-header {
             text-align: center;
             font-size: 2rem;
+
+            h1 {
+                text-decoration: underline;
+                text-decoration-color: $details;
+                text-underline-offset: 1rem;
+            }
+
+            .wp-custom-header img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .blog-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 300px);
+            grid-gap: 1rem;
+            max-width: 1000px;
+            margin: auto;
         }
 
         .blog-card {
-            margin: 1rem;
             padding: 1rem;
-            background-color: $primary;
+            background-color: $secondary;
+            color: $fontPrimary;
             border-radius: 5px;
             min-height: 250px;
+            display: flex;
+            flex-direction: column;
+            max-width: min-content;
+            box-shadow: .5px .5px 3px $details;
+            transition: .4s ease;
 
            img {
-            float: left;
-            margin-right: 1rem;
+            margin: auto;
+            border: .5px dashed;
+            width: 280px;
+            height: 190px;
+            margin-bottom: 1rem;
            }
+        }
+
+        .blog-card:hover {
+            background-color: $secondaryHover;
+            cursor: pointer;
+            box-shadow: 1px 1px 5px $details;
+            transform: translate(0, -3px);
         }
     }
 
@@ -118,4 +162,5 @@ $fontSecondary: #061A40;
 
 .site-footer {
     background-color: $primary;
+    color: $fontPrimary;
 }

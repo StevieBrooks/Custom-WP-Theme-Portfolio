@@ -17,15 +17,24 @@ Tags: blog, portfolio, entertainment, one-column, custom-logo, custom-background
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #f9f9f9;
+}
+
+li, a {
+  color: #F5F5F5;
+}
+
+li:hover, a:hover {
+  color: #6290C8;
+  transform: translate(0, -2px);
 }
 
 .site-header {
-  background-color: #061A40;
   height: 100px;
   width: 100%;
   max-width: 100%;
   position: sticky;
+  background-color: #040404;
+  color: #F5F5F5;
 }
 .site-header .top-bar {
   height: 70px;
@@ -41,15 +50,18 @@ Tags: blog, portfolio, entertainment, one-column, custom-logo, custom-background
   padding: 0 2rem;
 }
 .site-header .top-bar .logo {
-  border: 2px solid #B9D6F2;
+  border: 2px solid #6290C8;
   border-radius: 4px;
 }
 .site-header .top-bar .contact-button {
-  background-color: #B9D6F2;
-  color: #061A40;
+  background-color: #6290C8;
+  color: #040404;
   padding: 1rem;
   border: none;
   border-radius: 5px;
+}
+.site-header .menu-area .container {
+  background-color: #040404;
 }
 .site-header .menu-area .menu-items ul {
   display: flex;
@@ -66,27 +78,59 @@ Tags: blog, portfolio, entertainment, one-column, custom-logo, custom-background
 }
 
 .main-content {
-  background-color: rgba(6, 26, 64, 0.9411764706);
   height: 100%;
+  background-color: #040404;
+  color: #F5F5F5;
 }
 .main-content .container .page-header {
   text-align: center;
   font-size: 2rem;
 }
+.main-content .container .page-header h1 {
+  text-decoration: underline;
+  text-decoration-color: #6290C8;
+  text-underline-offset: 1rem;
+}
+.main-content .container .page-header .wp-custom-header img {
+  width: 100%;
+  height: auto;
+}
+.main-content .container .blog-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
 .main-content .container .blog-card {
-  margin: 1rem;
   padding: 1rem;
-  background-color: #061A40;
+  background-color: #17202B;
+  color: #F5F5F5;
   border-radius: 5px;
   min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  max-width: min-content;
+  box-shadow: 0.5px 0.5px 3px #6290C8;
+  transition: 0.4s ease;
 }
 .main-content .container .blog-card img {
-  float: left;
-  margin-right: 1rem;
+  margin: auto;
+  border: 0.5px dashed;
+  width: 280px;
+  height: 190px;
+  margin-bottom: 1rem;
+}
+.main-content .container .blog-card:hover {
+  background-color: rgba(23, 32, 43, 0.6901960784);
+  cursor: pointer;
+  box-shadow: 1px 1px 5px #6290C8;
+  transform: translate(0, -3px);
 }
 
 .site-footer {
-  background-color: #061A40;
+  background-color: #040404;
+  color: #F5F5F5;
 }
 
 /*# sourceMappingURL=style.css.map */
